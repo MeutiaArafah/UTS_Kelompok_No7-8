@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner kelompok0108 = new Scanner(System.in);
+        Scanner kelompok0708 = new Scanner(System.in);
         int pilihMenu;
 
         do {
@@ -15,8 +15,8 @@ public class Main {
             System.out.println("5. Cari Mahasiswa Berdasarkan NIM");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
-            pilihMenu = kelompok0108.nextInt();
-            kelompok0108.nextLine();
+            pilihMenu = kelompok0708.nextInt();
+            kelompok0708.nextLine();
 
             switch (pilihMenu) {
                 case 0:
@@ -44,6 +44,6 @@ public class Main {
 
         } while (pilihMenu != 0);
 
-        Mahasiswa0708[] mhs0708 = new Mahasiswa0708[4];
+        Mahasiswa[] mhs = new Mahasiswa[4];
     }
 }
