@@ -29,6 +29,10 @@ public class Main {
 
                     break;
                 case 3:
+                System.out.println("\nData Penilaian: ");
+                for (Penilaian p : nilai) {
+                    
+                }
 
                     break;
                 case 4:
@@ -39,23 +43,30 @@ public class Main {
                     break;
 
                 default:
-                System.out.println("Pilihan tidak valid!");
+                    System.out.println("Pilihan tidak valid!");
             }
 
         } while (pilihMenu != 0);
 
         // array mahasiswa
-        Mahasiswa[] mhs0708 = new Mahasiswa[2];
-        mhs0708[0] = new Mahasiswa("22001","Ali Rahman", "Informatika");
-        mhs0708[1] = new Mahasiswa("22001","Ali Rahman", "Informatika");
-        mhs0708[2] = new Mahasiswa("22001","Ali Rahman", "Informatika");
-        mhs0708[3] = new Mahasiswa("22001","Ali Rahman", "Informatika");
+        Mahasiswa[] mhs0708 = {
+                new Mahasiswa("22001", "Ali Rahman", "Informatika"),
+                new Mahasiswa("22002", "Budi Santoso", "Informatika"),
+                new Mahasiswa("22003", "Citra Dewi", "Sistem Informasi Bisnis"),
+        };
 
         // array matakuliah
-        MataKuliah[] mk0708 = new MataKuliah[2];
-        mk0708[0] = new MataKuliah("MK001", "Struktur Data", 3);
-        mk0708[1] = new MataKuliah("MK002", "Basis Data", 3);
-        mk0708[2] = new MataKuliah("MK003", "Basis Data", 3);
+        MataKuliah[] mk0708 = {
+                new MataKuliah("MK001", "Struktur Data", 3),
+                new MataKuliah("MK002", "Basis Data", 3),
+                new MataKuliah("MK003", "Basis Data", 3),
+        };
+
+        Penilaian[] penilaian0708 = {
+            new Penilaian([0][0].hitungNilaiAkhir),
+
+        };
+        // array data penilaian
 
     }
 }
