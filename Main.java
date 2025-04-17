@@ -44,6 +44,18 @@ public class Main {
 
         } while (pilihMenu != 0);
 
-        Mahasiswa0708[] mhs0708 = new Mahasiswa0708[4];
+        // array mahasiswa
+        Mahasiswa[] mhs0708 = new Mahasiswa[2];
+        mhs0708[0] = new Mahasiswa("22001","Ali Rahman", "Informatika");
+        mhs0708[1] = new Mahasiswa("22001","Ali Rahman", "Informatika");
+        mhs0708[2] = new Mahasiswa("22001","Ali Rahman", "Informatika");
+        mhs0708[3] = new Mahasiswa("22001","Ali Rahman", "Informatika");
+
+        // array matakuliah
+        MataKuliah[] mk0708 = new MataKuliah[2];
+        mk0708[0] = new MataKuliah("MK001", "Struktur Data", 3);
+        mk0708[1] = new MataKuliah("MK002", "Basis Data", 3);
+        mk0708[2] = new MataKuliah("MK003", "Basis Data", 3);
+
     }
 }
