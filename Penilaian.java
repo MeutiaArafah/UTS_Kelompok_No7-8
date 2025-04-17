@@ -1,12 +1,12 @@
 public class Penilaian {
     Mahasiswa mahasiswa;
-    Matakuliah matakuliah;
+    MataKuliah matakuliah;
     double nilaiTugas;
     double nilaiUTS;
     double nilaiUAS;
     double nilaiAkhir;
 
-    Penilaian(Mahasiswa mahasiswa, Matakuliah matakuliah, double nilaiTugas, double nilaiUTS, double nilaiUAS){
+    Penilaian(Mahasiswa mahasiswa, MataKuliah matakuliah, double nilaiTugas, double nilaiUTS, double nilaiUAS){
         this.mahasiswa = mahasiswa;
         this.matakuliah = matakuliah;
         this.nilaiTugas = nilaiTugas;
