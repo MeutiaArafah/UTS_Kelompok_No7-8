@@ -1,5 +1,5 @@
 public class DataPenilaian {
-    Penilaian[] penilaian;
+    static Penilaian[] penilaian;
 
     void tampilNilai(Penilaian[] nilai, Mahasiswa[] mahasiswa, MataKuliah[] matakuliah){
         for (int i = 0; i < nilai.length; i++) {
@@ -7,7 +7,7 @@ public class DataPenilaian {
         }
     }
 
-    void sortByNilaiAkhirSS(){
+    static void sortByNilaiAkhirSS(){
         for (int i = 0; i < penilaian.length; i++){
             Penilaian kiri = penilaian[i];
             for (int j = i + 1; j < penilaian.length; j++){

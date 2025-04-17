@@ -6,48 +6,6 @@ public class Main {
         Scanner kelompok0708 = new Scanner(System.in);
         int pilihMenu;
 
-        do {
-            System.out.println("\n=== MENU SISTEM AKADEMIK ===");
-            System.out.println("1. Tampilkan Daftar Mahasiswa");
-            System.out.println("2. Tampilkan Daftar Mata Kuliah");
-            System.out.println("3. Tampilkan Daftar Penilaian");
-            System.out.println("4. Urutkan Mahasiswa Berdasarkan Nilai Akhir");
-            System.out.println("5. Cari Mahasiswa Berdasarkan NIM");
-            System.out.println("0. Keluar");
-            System.out.print("Pilih menu: ");
-            pilihMenu = kelompok0708.nextInt();
-            kelompok0708.nextLine();
-
-            switch (pilihMenu) {
-                case 0:
-
-                    break;
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-                System.out.println("\nData Penilaian: ");
-                for (Penilaian p : nilai) {
-                    
-                }
-
-                    break;
-                case 4:
-
-                    break;
-                case 5:
-
-                    break;
-
-                default:
-                    System.out.println("Pilihan tidak valid!");
-            }
-
-        } while (pilihMenu != 0);
-
         // array mahasiswa
         Mahasiswa[] mhs0708 = {
                 new Mahasiswa("22001", "Ali Rahman", "Informatika"),
@@ -63,10 +21,61 @@ public class Main {
         };
 
         Penilaian[] penilaian0708 = {
-            new Penilaian([0][0].hitungNilaiAkhir),
-
+                new Penilaian(mhs0708[0], mk0708[0], 80, 85, 90),
+                new Penilaian(mhs0708[0], mk0708[1], 60, 75, 70),
+                new Penilaian(mhs0708[1], mk0708[0], 75, 70, 80),
+                new Penilaian(mhs0708[2], mk0708[1], 85, 90, 95),
+                new Penilaian(mhs0708[2], mk0708[2], 80, 90, 65),
         };
         // array data penilaian
+        do {
+            System.out.println("\n=== MENU SISTEM AKADEMIK ===");
+            System.out.println("1. Tampilkan Daftar Mahasiswa");
+            System.out.println("2. Tampilkan Daftar Mata Kuliah");
+            System.out.println("3. Tampilkan Daftar Penilaian");
+            System.out.println("4. Urutkan Mahasiswa Berdasarkan Nilai Akhir");
+            System.out.println("5. Cari Mahasiswa Berdasarkan NIM");
+            System.out.println("0. Keluar");
+            System.out.print("Pilih menu: ");
+            pilihMenu = kelompok0708.nextInt();
+            kelompok0708.nextLine();
+
+            switch (pilihMenu) {
+                case 0:
+                    break;
+                case 1:
+                    for (Mahasiswa mhs : mhs0708) {
+                        mhs.tampilMahasiswa();
+                    }
+                    break;
+                case 2:
+                    for (MataKuliah mk : mk0708) {
+                        mk.tampilMataKuliah();
+                    }
+                    break;
+                case 3:
+                    System.out.println("\nData Penilaian: ");
+                    for (Penilaian p : penilaian0708) {
+                        System.out.println(p.mahasiswa.nama + " | " +
+                                p.matakuliah.namaMK + " | " +
+                                "Nilai Akhir: " + p.nilaiAkhir);
+                    }
+
+                    break;
+                case 4:
+                    DataPenilaian.sortByNilaiAkhirSS();
+                    break;
+                case 5:
+                    System.out.print("Masukkan NIM mahasiswa yang dicari: ");
+                    String cari = kelompok0708.nextLine();
+                    DataMahasiswa.searchingNIM(mhs0708, cari);
+                    break;
+
+                default:
+                    System.out.println("Pilihan tidak valid!");
+            }
+
+        } while (pilihMenu != 0);
 
     }
 }
