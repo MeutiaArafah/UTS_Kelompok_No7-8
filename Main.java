@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
+    static Penilaian[] nilai;
 
     public static void main(String[] args) {
         Scanner kelompok0708 = new Scanner(System.in);
@@ -17,7 +18,7 @@ public class Main {
         MataKuliah[] mk0708 = {
                 new MataKuliah("MK001", "Struktur Data", 3),
                 new MataKuliah("MK002", "Basis Data", 3),
-                new MataKuliah("MK003", "Basis Data", 3),
+                new MataKuliah("MK003", "Desain Web", 3),
         };
 
         Penilaian[] penilaian0708 = {
@@ -60,10 +61,15 @@ public class Main {
                                 p.matakuliah.namaMK + " | " +
                                 "Nilai Akhir: " + p.nilaiAkhir);
                     }
-
                     break;
                 case 4:
-                    DataPenilaian.sortByNilaiAkhirSS();
+                    DataPenilaian.sortByNilaiAkhirSS(penilaian0708);
+                    System.out.println("\nData Penilaian Setelah Sorting: ");
+                    for (Penilaian p : penilaian0708) {
+                        System.out.println(p.mahasiswa.nama + " | " +
+                                p.matakuliah.namaMK + " | " +
+                                "Nilai Akhir: " + p.nilaiAkhir);
+                    }
                     break;
                 case 5:
                     System.out.print("Masukkan NIM mahasiswa yang dicari: ");
