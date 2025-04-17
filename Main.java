@@ -44,7 +44,6 @@ public class Main {
 
         } while (pilihMenu != 0);
 
-<<<<<<< HEAD
         // array mahasiswa
         Mahasiswa[] mhs0708 = new Mahasiswa[2];
         mhs0708[0] = new Mahasiswa("22001","Ali Rahman", "Informatika");
@@ -58,8 +57,5 @@ public class Main {
         mk0708[1] = new MataKuliah("MK002", "Basis Data", 3);
         mk0708[2] = new MataKuliah("MK003", "Basis Data", 3);
 
-=======
-        Mahasiswa[] mhs = new Mahasiswa[4];
->>>>>>> 8d45cba52eaba11669406be2ad3755e7c84a9845
     }
 }
