@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
+    static Penilaian[] nilai;
 
     public static void main(String[] args) {
         Scanner kelompok0708 = new Scanner(System.in);
@@ -48,7 +49,7 @@ public class Main {
 
         } while (pilihMenu != 0);
 
-        // array mahasiswa
+
         Mahasiswa[] mhs0708 = {
                 new Mahasiswa("22001", "Ali Rahman", "Informatika"),
                 new Mahasiswa("22002", "Budi Santoso", "Informatika"),
