@@ -1,9 +1,9 @@
-class Mahasiswa0708{
+class Mahasiswa{
     String NIM;
     String nama;
     String prodi;
 
-    Mahasiswa0708(String NIM, String nama, String prodi){
+    Mahasiswa(String NIM, String nama, String prodi){
         this.NIM = NIM;
         this.nama = nama;
         this.prodi = prodi;
