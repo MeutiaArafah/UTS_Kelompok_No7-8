@@ -84,11 +84,11 @@ public class Main {
                     String cari = kelompok0708.nextLine();
                     DataMahasiswa.searchingNIM(mhs0708, cari);
                     break;
-                case 7:
-                    System.out.print("Masukkan Kode Matakuliah yang dicari: ");
-                    cari = kelompok0708.nextLine();
-                    DataMahasiswa.searchingMK(mk0708, cari);
-                    break;
+                // case 7:
+                //     System.out.print("Masukkan Kode Matakuliah yang dicari: ");
+                //     cari = kelompok0708.nextLine();
+                //     DataMahasiswa.searchingMK(mk0708, cari);
+                //     break;
 
                 default:
                     System.out.println("Pilihan tidak valid!");
