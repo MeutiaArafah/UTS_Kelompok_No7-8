@@ -19,4 +19,19 @@ public class DataPenilaian {
             }
         }
     }
+
+    static void sortByNilaiAkhirIS(Penilaian[] penilaian) {
+        for (int i = 1; i < penilaian.length; i++) {
+            Penilaian current = penilaian[i];
+            int j = i - 1;
+    
+            while (j >= 0 && penilaian[j].nilaiAkhir > current.nilaiAkhir) {
+                penilaian[j + 1] = penilaian[j];
+                j--;
+            }
+    
+            penilaian[j + 1] = current; 
+        }
+    }
+    
 }
