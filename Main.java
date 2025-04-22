@@ -30,7 +30,7 @@ public class Main {
             System.out.println("\n=== MENU SISTEM AKADEMIK ===");
             System.out.println("1. Tampilkan Daftar Mahasiswa");
             System.out.println("2. Tampilkan Daftar Mata Kuliah");
-            System.out.println("3. Tampilkan Daftar Penilaian");
+            System.out.println("3. Tampilkan Daftar Penilaian"); 
             System.out.println("4. Urutkan Mahasiswa Berdasarkan Nilai Akhir (DESC)");
             System.out.println("5. Urutkan Mahasiswa Berdasarkan Nilai Akhir (ASC)");
             System.out.println("6. Cari Mahasiswa Berdasarkan NIM");
