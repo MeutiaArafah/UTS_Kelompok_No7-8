@@ -71,13 +71,13 @@ public class Main {
                     }
                     break;
                 case 5:
-                    DataPenilaian.sortByNilaiAkhirIS(penilaian0708);
-                    System.out.println("\nData Penilaian Setelah Sorting (ASC): ");
-                    for (Penilaian p : penilaian0708) {
-                        System.out.println(p.mahasiswa.nama + " | " +
-                                p.matakuliah.namaMK + " | " +
-                                "Nilai Akhir: " + p.nilaiAkhir);
-                    }
+                    // DataPenilaian.sortByNilaiAkhirIS(penilaian0708);
+                    // System.out.println("\nData Penilaian Setelah Sorting (ASC): ");
+                    // for (Penilaian p : penilaian0708) {
+                    //     System.out.println(p.mahasiswa.nama + " | " +
+                    //             p.matakuliah.namaMK + " | " +
+                    //             "Nilai Akhir: " + p.nilaiAkhir);
+                    // }
                     break;
                 case 6:
                     System.out.print("Masukkan NIM mahasiswa yang dicari: ");
@@ -87,7 +87,7 @@ public class Main {
                 case 7:
                     System.out.print("Masukkan Kode Matakuliah yang dicari: ");
                     cari = kelompok0708.nextLine();
-                    DataMahasiswa.searchingMK(mk0708, cari);
+                    MataKuliah.searchingMK(mk0708, cari);
                     break;
 
                 default:
