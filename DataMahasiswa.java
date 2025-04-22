@@ -7,7 +7,7 @@ public class DataMahasiswa {
     static void searchingNIM(Mahasiswa[] mhs0708, String cari){
         int posisi = -1;
         for(int i = 0; i < mhs0708.length; i++){
-            if(mhs0708[i].NIM.equals(cari)){
+            if(mhs0708[i].NIM.equalsIgnoreCase(cari)){
                 posisi = i;
                 break;
             }
